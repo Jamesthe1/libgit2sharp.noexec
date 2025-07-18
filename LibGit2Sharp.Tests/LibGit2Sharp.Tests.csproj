@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibGit2Sharp\LibGit2Sharp.csproj" />
+    <ProjectReference Include="..\LibGit2Sharp.NoExec\LibGit2Sharp.NoExec.csproj" />
     <ProjectReference Include="..\NativeLibraryLoadTestApp\x86\NativeLibraryLoadTestApp.x86.csproj" Condition="'$(TargetFramework)' == 'net472'" ReferenceOutputAssembly="false" OutputItemType="TestAppExe" />
     <ProjectReference Include="..\NativeLibraryLoadTestApp\x64\NativeLibraryLoadTestApp.x64.csproj" Condition="'$(TargetFramework)' == 'net472'" ReferenceOutputAssembly="false" OutputItemType="TestAppExe" />
   </ItemGroup>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\LibGit2Sharp\Core\Platform.cs" Link="TestHelpers\Platform.cs" />
+    <Compile Include="..\LibGit2Sharp.NoExec\Core\Platform.cs" Link="TestHelpers\Platform.cs" />
     <Compile Remove="desktop\**" Condition="'$(TargetFramework)' != 'net472'" />
     <Content Include="Resources\**\*.*" CopyToOutputDirectory="PreserveNewest" />
     <None Update="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />

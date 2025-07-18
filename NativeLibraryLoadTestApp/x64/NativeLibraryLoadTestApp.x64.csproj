@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LibGit2Sharp\LibGit2Sharp.csproj" />
+    <ProjectReference Include="..\..\LibGit2Sharp.NoExec\LibGit2Sharp.NoExec.csproj" />
   </ItemGroup>
 
   <ItemGroup>
